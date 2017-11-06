@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parallel test suite" parallel="tests" thread-count="2">
+    <test name="Regression Test on FF" parallel="methods" thread-count="5">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.dsrc.seleniumtest.framework.pagetests.LoginTest" />
+        </classes>
+    </test>
+    <test name="Regression Test on Chrome" parallel="methods" thread-count="5">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.dsrc.seleniumtest.framework.pagetests.LoginTest" />
+        </classes>
+    </test>
+ 
+</suite>
